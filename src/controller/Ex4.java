@@ -6,12 +6,11 @@ public class Ex4 {
 	}
 	
 	
-	public int fatorialduplo(int n, int inicio) {
-		if( inicio == n) {
-			return inicio;
+	public int fatorialduplo(int n) {
+		if( n == 0 || n == 1) {
+			return 1;
 		} 
-		return inicio * fatorialduplo(n, inicio + 2);
-		
+		return n * fatorialduplo(n - 2);	
 		
 	}
 }
